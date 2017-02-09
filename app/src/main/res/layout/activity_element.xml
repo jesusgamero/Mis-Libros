@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:clickable="false">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/imagenf"
+        android:layout_alignParentTop="true"
+        android:contentDescription="imagen"
+        android:src="@drawable/libro1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/nota"
+        android:scaleType="fitCenter"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/autorf"
+        android:hint="autor"
+        android:layout_below="@+id/titulof"
+        android:layout_alignStart="@+id/titulof"
+        android:layout_alignParentEnd="true"
+        tools:ignore="HardcodedText" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nota"
+        android:layout_below="@+id/autorf"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:layout_alignStart="@+id/autorf"
+        android:layout_alignLeft="@+id/autorf"
+        android:layout_toEndOf="@+id/titulof"
+        android:rating="5"
+        style="@android:style/Widget.Material.Light.RatingBar.Indicator"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/titulof"
+        android:hint="titulo"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imagenf"
+        android:layout_marginStart="17dp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
